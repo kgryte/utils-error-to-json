@@ -1,6 +1,6 @@
 {
   "name": "utils-error-to-json",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Returns a JSON representation of an error object.",
   "author": {
     "name": "Athan Reines",
