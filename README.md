@@ -45,9 +45,9 @@ The __only__ standardized cross-platform property is `message`. Depending on the
 
 *	__name__: error name
 *	__stack__: stack trace
-*	__code__: error code ([Node.js][node-error])
-*	__errno__: error number ([Node.js][node-error])
-*	__syscall__: system call ([Node.js][node-error])
+*	__code__: error code ([Node.js][node-system-error])
+*	__errno__: error code `string` ([Node.js][node-system-error])
+*	__syscall__: `string` representing the failed system call ([Node.js][node-system-error])
 
 The `function` also serializes __all__ `enumerable` properties.
 
