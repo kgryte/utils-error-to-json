@@ -1,5 +1,5 @@
 {
-  "name": "error-to-json",
+  "name": "utils-error-to-json",
   "version": "0.0.0",
   "description": "Returns a JSON representation of an error object.",
   "author": {
@@ -23,7 +23,7 @@
   "main": "./lib",
   "repository": {
     "type": "git",
-    "url": "git://github.com/kgryte/error-to-json.git"
+    "url": "git://github.com/kgryte/utils-error-to-json.git"
   },
   "keywords": [
     "error",
@@ -41,7 +41,7 @@
     "utils"
   ],
   "bugs": {
-    "url": "https://github.com/kgryte/error-to-json/issues"
+    "url": "https://github.com/kgryte/utils-error-to-json/issues"
   },
   "dependencies": {
     "object-keys": "^1.0.9",

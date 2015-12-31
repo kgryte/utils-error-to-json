@@ -8,14 +8,14 @@ toJSON
 ## Installation
 
 ``` bash
-$ npm install error-to-json
+$ npm install utils-error-to-json
 ```
 
 
 ## Usage
 
 ``` javascript
-var toJSON = require( 'error-to-json' );
+var toJSON = require( 'utils-error-to-json' );
 ```
 
 #### toJSON()
@@ -111,7 +111,7 @@ var json = toJSON( err );
 ## Examples
 
 ``` javascript
-var toJSON = require( 'error-to-json' );
+var toJSON = require( 'utils-error-to-json' );
 
 var err = new Error( 'beep' );
 console.log( toJSON( err ) );
@@ -255,23 +255,23 @@ $ make view-browser-tests
 Copyright &copy; 2015. Athan Reines.
 
 
-[npm-image]: http://img.shields.io/npm/v/error-to-json.svg
-[npm-url]: https://npmjs.org/package/error-to-json
+[npm-image]: http://img.shields.io/npm/v/utils-error-to-json.svg
+[npm-url]: https://npmjs.org/package/utils-error-to-json
 
-[build-image]: http://img.shields.io/travis/kgryte/error-to-json/master.svg
-[build-url]: https://travis-ci.org/kgryte/error-to-json
+[build-image]: http://img.shields.io/travis/kgryte/utils-error-to-json/master.svg
+[build-url]: https://travis-ci.org/kgryte/utils-error-to-json
 
-[coverage-image]: https://img.shields.io/codecov/c/github/kgryte/error-to-json/master.svg
-[coverage-url]: https://codecov.io/github/kgryte/error-to-json?branch=master
+[coverage-image]: https://img.shields.io/codecov/c/github/kgryte/utils-error-to-json/master.svg
+[coverage-url]: https://codecov.io/github/kgryte/utils-error-to-json?branch=master
 
-[dependencies-image]: http://img.shields.io/david/kgryte/error-to-json.svg
-[dependencies-url]: https://david-dm.org/kgryte/error-to-json
+[dependencies-image]: http://img.shields.io/david/kgryte/utils-error-to-json.svg
+[dependencies-url]: https://david-dm.org/kgryte/utils-error-to-json
 
-[dev-dependencies-image]: http://img.shields.io/david/dev/kgryte/error-to-json.svg
-[dev-dependencies-url]: https://david-dm.org/dev/kgryte/error-to-json
+[dev-dependencies-image]: http://img.shields.io/david/dev/kgryte/utils-error-to-json.svg
+[dev-dependencies-url]: https://david-dm.org/dev/kgryte/utils-error-to-json
 
-[github-issues-image]: http://img.shields.io/github/issues/kgryte/error-to-json.svg
-[github-issues-url]: https://github.com/kgryte/error-to-json/issues
+[github-issues-image]: http://img.shields.io/github/issues/kgryte/utils-error-to-json.svg
+[github-issues-url]: https://github.com/kgryte/utils-error-to-json/issues
 
 [tape]: https://github.com/substack/tape
 [istanbul]: https://github.com/gotwarlost/istanbul
