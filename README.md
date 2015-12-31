@@ -82,7 +82,7 @@ var json = toJSON( err );
 	-	[`RangeError`][js-range-error]
 	-	[`URIError`][js-uri-error]
 	-	[`EvalError`][js-eval-error]
-*	The implementation supports custom error types and sets the `type` field to the closed built-in [`error`][js-error] type.
+*	The implementation supports custom error types and sets the `type` field to the closest built-in [`error`][js-error] type.
 	
 	``` javascript
 	function CustomError( msg ) {
