@@ -45,9 +45,9 @@ The __only__ standardized cross-platform property is `message`. Depending on the
 
 *	__name__: error name
 *	__stack__: stack trace
-*	__code__: error code ([Node.js][node-system-error])
-*	__errno__: error code `string` ([Node.js][node-system-error])
-*	__syscall__: `string` representing the failed system call ([Node.js][node-system-error])
+*	__code__: error code ([Node.js][node-system-error] system errors)
+*	__errno__: error code `string` ([Node.js][node-system-error] system errors)
+*	__syscall__: `string` representing the failed system call ([Node.js][node-system-error] system errors)
 
 The `function` also serializes __all__ `enumerable` properties.
 
@@ -82,7 +82,6 @@ var json = toJSON( err );
 	-	[`RangeError`][js-range-error]
 	-	[`URIError`][js-uri-error]
 	-	[`EvalError`][js-eval-error]
-	-	[`System Error`][node-system-error] (Node.js)
 *	Custom [error][js-error] types are serialized as type `Error`.
 	
 	``` javascript

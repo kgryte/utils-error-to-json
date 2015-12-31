@@ -49,8 +49,8 @@
   },
   "devDependencies": {
     "browserify": "12.x.x",
-    "chai": "^3.4.1",
     "codecov.io": "^0.1.5",
+    "detect-class-support": "^1.0.0",
     "istanbul": "^0.4.1",
     "jshint": "2.x.x",
     "jshint-stylish": "2.x.x",
