@@ -74,7 +74,7 @@ var json = toJSON( err );
 
 ## Notes
 
-*	Supported [error][js-error] types:
+*	Supported built-in [`error`][js-error] types:
 	-	[`Error`][js-error]
 	-	[`TypeError`][js-type-error]
 	-	[`SyntaxError`][js-syntax-error]
@@ -82,16 +82,16 @@ var json = toJSON( err );
 	-	[`RangeError`][js-range-error]
 	-	[`URIError`][js-uri-error]
 	-	[`EvalError`][js-eval-error]
-*	Custom [error][js-error] types are serialized as type `Error`.
+*	The implementation supports custom error types and sets the `type` field to the closed built-in [`error`][js-error] type.
 	
 	``` javascript
 	function CustomError( msg ) {
 		this.name = 'CustomError';
 		this.message = msg || '';
-		this.stack = ( new Error() ).stack;
+		this.stack = ( new TypeError() ).stack;
 		return this;
 	}
-	CustomError.prototype = Object.create( Error.prototype );
+	CustomError.prototype = Object.create( TypeError.prototype );
 	CustomError.prototype.constructor = CustomError;
 
 	var err = new CustomError( 'boop' );
@@ -99,7 +99,7 @@ var json = toJSON( err );
 	var json = toJSON( err );
 	/*
 	  {
-	    "type": "Error",
+	    "type": "TypeError",
 	    "name": "CustomError", 
 	    "message": "boop",
 	    "stack": "<stack>"
